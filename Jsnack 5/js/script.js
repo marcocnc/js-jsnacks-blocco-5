@@ -40,9 +40,9 @@ const bikes = [
 // });
 // console.log(minWeigthBike);
 
-const [{name, weight}] = bikes;
-bikes.reduce((min, max) =>{
-    return min.weigth < max.weigth ? min : max;
+const minWeigthBike = bikes.reduce((min, max) =>{
+    return min.weight < max.weight ? min : max;
 })
-console.log(`La bici con peso minore è ${name} con i suoi ${weight} kg`)
+const {name, weight} = minWeigthBike;
+console.log(`La bici con peso minore è ${name} con i suoi ${weight}kg`)
 
