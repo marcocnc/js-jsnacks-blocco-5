@@ -51,6 +51,11 @@ const underage = users.filter((underageUser) => {
     }
     return false;
 })
+
+/* forma contratta
+const underage = users.filter( utente => users.age < 18)
+
+*/
 console.log(underage);
 
 //Over 65

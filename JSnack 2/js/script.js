@@ -30,6 +30,20 @@ const newList = students.map(function(studente){
     return {nome: studente.name + ' ' + studente.lastname, badge: studente.badgeNum, media: mediaVoti(studente.votes)};
 })
 
+
+/* altra soluzione
+const studentRemap = students.map ( student => {
+    const {name, lastname, badgeNum, votes} = student;
+    const studentObj = {
+        name: ${name} ${lastname},
+        badgeNum :
+    }
+
+    return studentObj
+} )
+
+*/
+
 console.log(newList);
 
 function mediaVoti(voti){
