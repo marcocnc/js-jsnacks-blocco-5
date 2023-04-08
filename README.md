@@ -43,7 +43,10 @@ Creare un array di oggetti:
 Ogni oggetto descriverà una bici da corsa con le seguenti proprietà : nome e peso.
 Stampare in console la bici con peso minore utilizzando destructuring e template literal.
 ### Logica
-1. Creare l'array di oggetti
+1. Creare l'array di oggetti;
+2. Creando una nuova constante, con reduce prendiamo i valori massimo e minimo dell'array di oggetti e li confrontiamo, e se il valore minimo è minore del massimo, restituirà quel valore;
+3. A questo punto si destruttura l'array prendendo i valori che ci servono, che saranno uguali al nuovo array creatosi con il map;
+4. Infine si stampa in console.
 
 
 ## Jsnack 6
@@ -53,3 +56,8 @@ Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0
 Generare numeri random al posto degli 0 nelle proprietà : punti fatti e falli subiti.
 Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e
 falli subiti e stampiamo tutto in console.
+### Logica
+1. Creare l'array di oggetti;
+2. Creare le funzioni che generano numeri random sia per i punti che per i falli;
+3. A questo punto con un ciclo map si rimappa l'array teams in modo tale che se i punti e i falli sono uguali a zero, vengono sovrascritti con le funzioni che generano i numeri;
+4. Per creare un nuovo array che contenga solo il nome e i falli subiti si cicla di nuovo l'array con map, al cui interno viene destrutturato, e si crea un nuovo oggetto che contenga quei valori che ci servono
